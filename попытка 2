@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+</head>
+
+<body>
+
+    <body bgcolor="#7fffd4"></body>
+    <h1>Новый красивый сайт имени меня</h1>
+    <div>
+        <h3>Что хочу, то и ворочу</h3>
+    </div>
+    <p>бла бла бла пробую писать абзацы
+    <p>теперь следующий</p>
+    <input type="text" size="30" list="vybor">
+    <datalist id="vybor">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+    </datalist>
+    <p><a href="https://htmlbook.ru/html/form" target="_blank"> ссылка, которую видно</a></p>
+    <form action="123">
+        <input type="text" maxlength="3" placeholder="введите 3 символа" required>
+        <p><button type="reset"> стереть текст из поля выше</button></p>
+        <p><button formaction="https://htmlbook.ru/html/form">кнопка с сылкой, которую не видно</a></button></p>
+
+    </form>
+    <form action="456">
+        <input type="radio"> ответ 1 <br>
+        <input type="radio"> ответ 2 <br>
+        <input type="radio"> ответ 3 <br>
+
+    </form>
+
+</body>
+
+</html>
