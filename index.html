@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Document2</title>
 </head>
 
@@ -56,13 +57,15 @@
         Consequuntur, deleniti unde. Molestias tenetur laudantium doloremque adipisci corrupti dignissimos natus odit
         quisquam pariatur. Esse, laudantium corporis!
     </p>
-    <button id="knopka2"><img src="https://upload.wikimedia.org/wikipedia/ru/7/78/Trollface.svg" alt="more"
+    <button id="knopka2" onclick='modal("knopka2")'><img
+            src="https://upload.wikimedia.org/wikipedia/ru/7/78/Trollface.svg" alt="more"
             style="vertical-align: middle; height: 40px;">
         с картинкой?
     </button>
     <div class="test">
         очень интересный и важный текст
     </div>
+    <!--
     <script>
         "use strict"
         document.getElementById("knopka2").onclick = () => {
@@ -80,6 +83,32 @@
             fetch('https://jsonplaceholder.typicode.com/users')
                 .then(response => response.json())
                 .then(json => console.log(json))
+        }
+    </script>
+
+    <script>
+        "use strict"
+        document.getElementById("knopka2").onclick = () => {
+            alert("получен ответ в коммандной строке, меня не видно");
+            console.log("вот этот самый ответ");
+            fetch('https://http.cat/404')
+                .then(response => response.json())
+                .then(json => console.log(json));
+        }
+    </script>
+    <iframe
+        src="https://web.postman.co/workspace/My-Workspace~52841d88-10e6-4fa3-87a9-a6baa251c52b/request/create?requestId=207f62a7-5a73-4f78-8e17-52a13c859148"
+        frameborder="0">
+    </iframe>
+-->
+    <script>
+        function modal(id) {
+            Swal.fire({
+                title: "спустя полчаса!",
+                text: "оно работает, молодец)",
+                icon: "info"
+            });
+
         }
     </script>
 </body>
